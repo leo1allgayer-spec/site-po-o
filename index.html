@@ -281,7 +281,7 @@
 <source src="assets/videos/limpeza-tecnica.mp4" type="video/mp4"/>
 </video>
 <div class="absolute top-6 left-6 pointer-events-none">
-<span class="bg-secondary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Limpeza Técnica</span>
+<span class="bg-secondary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Perfuração de Poço</span>
 </div>
 </div>
 </div>
@@ -356,6 +356,17 @@
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
+                });
+            });
+        });
+
+        // Pause other videos when one starts playing.
+        document.querySelectorAll("video").forEach(video => {
+            video.addEventListener("play", () => {
+                document.querySelectorAll("video").forEach(otherVideo => {
+                    if (otherVideo !== video) {
+                        otherVideo.pause();
+                    }
                 });
             });
         });
