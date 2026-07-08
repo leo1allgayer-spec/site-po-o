@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Águas Cristalinas do Sul | Soluções em Poços Artesianos</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#02677f",
+                    "tertiary-fixed": "#c3f181",
+                    "on-secondary-container": "#00667e",
+                    "on-background": "#191c1d",
+                    "surface": "#f8fafb",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e1e3e4",
+                    "tertiary-container": "#314d00",
+                    "on-primary-container": "#83bad6",
+                    "surface-container": "#eceeef",
+                    "inverse-primary": "#96ceeb",
+                    "surface-bright": "#f8fafb",
+                    "primary-container": "#004b63",
+                    "surface-container-high": "#e6e8e9",
+                    "surface-tint": "#2a657e",
+                    "inverse-surface": "#2e3132",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c0c7cd",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#044d65",
+                    "on-tertiary-fixed": "#111f00",
+                    "outline": "#71787d",
+                    "on-surface": "#191c1d",
+                    "secondary-container": "#98e2fd",
+                    "on-secondary-fixed-variant": "#004e60",
+                    "primary": "#003345",
+                    "inverse-on-surface": "#eff1f2",
+                    "on-secondary-fixed": "#001f28",
+                    "on-primary-fixed": "#001f2b",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#96ceeb",
+                    "surface-variant": "#e1e3e4",
+                    "primary-fixed": "#bfe8ff",
+                    "secondary-fixed-dim": "#87d1ec",
+                    "surface-dim": "#d8dadb",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#a8d469",
+                    "background": "#f8fafb",
+                    "surface-container-low": "#f2f4f5",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#324f00",
+                    "tertiary": "#203500",
+                    "on-tertiary-container": "#95c057",
+                    "secondary-fixed": "#b7eaff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#40484c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "base-unit": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 backdrop-blur-md bg-surface/90 border-b border-outline-variant h-20">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full">
+<div class="text-headline-md font-headline-md text-primary tracking-tight">
+                Águas Cristalinas do Sul
+            </div>
+<div class="hidden md:flex items-center gap-8 font-body-md text-on-surface-variant">
+<a class="hover:text-secondary transition-colors duration-200 cursor-pointer" href="#servicos">Serviços</a>
+<a class="hover:text-secondary transition-colors duration-200 cursor-pointer" href="#resultados">Resultados</a>
+<a class="hover:text-secondary transition-colors duration-200 cursor-pointer" href="#diferenciais">Diferenciais</a>
+<a class="hover:text-secondary transition-colors duration-200 cursor-pointer" href="#contato">Contato</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity" href="https://wa.me/55XXXXXXXXXXX" target="_blank">Orçamento</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 md:pt-48 md:pb-32 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="reveal">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                    Soluções completas em poços artesianos
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                    Perfuração, manutenção e limpeza de poços com atendimento profissional e foco em qualidade para residências, agronegócio e indústrias.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform shadow-lg" href="https://wa.me/55XXXXXXXXXXX" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Chamar no WhatsApp
+                    </a>
+<a class="flex items-center justify-center border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors" href="#servicos">
+                        Ver serviços
+                    </a>
+</div>
+</div>
+<div class="relative reveal delay-100">
+<div class="aspect-video w-full rounded-full overflow-hidden shadow-2xl border-4 border-white">
+<!-- Placeholder representing the specific technical video mentioned -->
+<div class="w-full h-full bg-surface-container-highest flex items-center justify-center relative overflow-hidden group cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A professional cinematic shot of an industrial water well drilling rig operating in a lush green rural landscape of Southern Brazil. The morning sunlight filters through the trees, highlighting the powerful hydraulic machinery and crystalline water spray. The aesthetic is clean, technical, and high-end, using a palette of deep navy blues and earthy greens to suggest reliability and environmental care." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1tw6BtTctxLrDhWuYWvoAm02wnnuHXkIoBDTGjrxrQpfGYiLCkxjggk3d7rSQNt7c0oCYwpmPeTEsl345j6YQOmoSp6V3IoFZzOeuOB2ew918D4nrTgfBhslWInEgm3Qnx57ypUfW1ZPWL_Pq4PBLw1lPdIedMGPjMutOgA-IEmFZ8K9dCL4qhaRHiEfgJhy1E-6uXCcpE8e4yRAuhPlUy5OYfQwz-O73iZRCajFcuDfiViXMBqWmd4jUuWpyi9QhPuAY8cKrM9I')"></div>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-6xl opacity-80 group-hover:opacity-100 transition-opacity">play_circle</span>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-xl hidden md:block shadow-xl">
+<p class="font-headline-md">100%</p>
+<p class="text-sm opacity-80">Água Pura Garantida</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="servicos">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal">
+<span class="text-secondary font-label-caps tracking-widest uppercase">Nossas Soluções</span>
+<h2 class="font-headline-md text-3xl text-primary mt-4">Serviços Especializados</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-2xl transition-all duration-300 reveal delay-100 group">
+<div class="w-16 h-16 bg-primary-container rounded-lg flex items-center justify-center text-on-primary-container mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Perfuração de poço artesiano</h3>
+<p class="text-on-surface-variant font-body-md">Execução de poços artesianos para residências, propriedades rurais, comércios e empresas, buscando uma solução eficiente para abastecimento de água.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-2xl transition-all duration-300 reveal delay-200 group">
+<div class="w-16 h-16 bg-primary-container rounded-lg flex items-center justify-center text-on-primary-container mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">build</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Manutenção de poços</h3>
+<p class="text-on-surface-variant font-body-md">Serviços de manutenção para melhorar o funcionamento, preservar a estrutura e aumentar a vida útil do poço, evitando paradas inesperadas.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-2xl transition-all duration-300 reveal delay-300 group">
+<div class="w-16 h-16 bg-primary-container rounded-lg flex items-center justify-center text-on-primary-container mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">cleaning_services</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Limpeza de poço</h3>
+<p class="text-on-surface-variant font-body-md">Limpeza técnica para remover impurezas, melhorar a qualidade da água e manter o sistema em perfeitas condições sanitárias e de vazão.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface overflow-hidden" id="diferenciais">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 relative reveal">
+<div class="grid grid-cols-2 gap-4">
+<div class="h-64 rounded-2xl overflow-hidden bg-slate-200 mt-12 shadow-md">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of crystal clear water flowing from a modern stainless steel tap in a professional laboratory setting. The lighting is crisp and bright, reflecting off the water droplets. The background is a clean, corporate blue-themed office environment. The image conveys purity, hygiene, and high standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmkmuXa5aFuLtJ2e0MdYWutB1iYWPXCM0yeu26muONtqNFh0neu9ygtEgtIFUc9pGXBBlT6Sn1PvkvMLa3kMo7VYaxUgsiKZVqqBPSXxf7UO6bZ9QI1LeIEuQ6L0kabPNQgic9OdDn-5CUqifcgq6f9rZ7sWLc-5ix_vaoWrfNs2flL_GzpfLBQoGzxPMpuQhENeIgrfGZVS5rEKsAAzwDB7h2lcrlfbmEoEVGCq6muI_O09fC68Sg1dV_NhhmKlv_HnQ6j36cKUk"/>
+</div>
+<div class="h-64 rounded-2xl overflow-hidden bg-slate-300 shadow-md">
+<img class="w-full h-full object-cover" data-alt="An expert technician in professional gear inspecting a water pump system in a clean, well-lit utility room. The environment is organized and technical, showcasing high-end mechanical components. The color palette features whites, greys, and navy blues, emphasizing technical mastery and attention to detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ0zUZs0YuOy3D103TuhbUGDCBW0PmaSP2RoI5CqJi_lwBF0mSS4Izee9UKEcLIiJFK-dyk3k0hMZgcYqqpMY9N5KsEjyCAZDaLJgImbo9xYq9y7LuDIOIVHBeK7x2AgR7tIlsEfAWY87MvO5uxJ5rQzL278X38CfiVJ7tKygChpV4aSDWrTLy_GCuCuiV5pbj-yngiVKMfsIiDK6PVWOhfUX5LEejggKuYx9LqX1dnQkio7nC-5vSIUXHkaGwF-0b4q54G1HMLdg"/>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-secondary rounded-full flex items-center justify-center border-8 border-white shadow-lg">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="order-1 lg:order-2 reveal">
+<h2 class="font-display-lg-mobile text-primary mb-6">Água de qualidade começa com um serviço bem executado</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">
+                    A Águas Cristalinas do Sul trabalha com atenção aos detalhes, responsabilidade e compromisso em entregar soluções seguras para quem precisa de água com mais autonomia.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl">support_agent</span>
+<div>
+<p class="font-bold text-primary">Atendimento profissional</p>
+<p class="text-sm text-on-surface-variant">Equipe técnica capacitada e pronta para orientar.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl">fact_check</span>
+<div>
+<p class="font-bold text-primary">Serviços completos</p>
+<p class="text-sm text-on-surface-variant">Do projeto à manutenção, cuidamos de tudo.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl">chat_bubble</span>
+<div>
+<p class="font-bold text-primary">Orçamento via WhatsApp</p>
+<p class="text-sm text-on-surface-variant">Agilidade no atendimento e transparência.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl">engineering</span>
+<div>
+<p class="font-bold text-primary">Experiência em poços</p>
+<p class="text-sm text-on-surface-variant">Anos de atuação com foco em resultados duradouros.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Results Section -->
+<section class="py-24 bg-primary text-on-primary px-margin-mobile md:px-margin-desktop" id="resultados">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal">
+<div>
+<span class="text-tertiary-fixed font-label-caps tracking-widest uppercase">Nossa Prática</span>
+<h2 class="font-display-lg-mobile text-white mt-4">Veja alguns resultados</h2>
+</div>
+<p class="text-primary-fixed-dim max-w-md">Transparência em cada etapa. Confira registros reais de nossas operações em campo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Video Item 1 -->
+<div class="relative group aspect-video rounded-2xl overflow-hidden shadow-2xl reveal delay-100">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A high-quality still from a video showing a steady stream of clear water gushing from a newly drilled artesian well. The setting is a large farm during a sunny day. The image captures the dynamic movement of the water and the professional infrastructure around it. Modern, crisp, and authentic style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDR50ma_TBgVBRf0cHpz7e2o3FtdtwFud3fZWaarK2NFERLyB6JxAdKbIqQMU1QZ1ES_u7VntVviSClxQL9nYiiOnbtCq9eYmkP9BVYDv2phJN_CA_bOMqzn7t-Csm1UDFxigAG7vUoB9UPT_65v4aszeW33-a5o2-Bdcw79Y2K6NkfwZO2tUHlETKx9sIPBey_usAsSulqowr1I_9YzARzSCmi33RZrpuIau_7nxbIl8iDyuhw-2Rb-c3KEEngYZIR0-KdfuqpiZA')"></div>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-secondary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Perfuração Concluída</span>
+</div>
+</div>
+<!-- Video Item 2 -->
+<div class="relative group aspect-video rounded-2xl overflow-hidden shadow-2xl reveal delay-200">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic video thumbnail showing technical maintenance being performed on an artesian well. Specialist tools are visible against the backdrop of a professional facility. The lighting is focused and clean, emphasizing technical precision. The color palette is professional and calm." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGgHqXQBbGX5nGrqNSAvYGjV_tHb-3AN70BfZ0JmTMooKXQegeujcTOH2kOeihF1Lul_GeFrdP9qKDcHegAXiYNSXC27XPY4D0D-qqpw3ezNRCmib0AL9jqTMCWtcvNreP8jryqoR8PYpCAWVrBbgLNJwGqX9ECboC2_Lvh9lTkCop9OKOW6G1wXylZCP35wD0tYo78W2kjvriL-Nkquuq8CJ96vhEjHBPgAUGd-G4iNC60zzsr1N46MHNfQ5fnK2jtFMUmeMD2Bs')"></div>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-secondary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Limpeza Técnica</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop" id="contato">
+<div class="max-w-container-max mx-auto">
+<div class="bg-secondary-container rounded-[2rem] p-8 md:p-20 text-center relative overflow-hidden reveal">
+<!-- Background decoration -->
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="font-display-lg-mobile md:font-display-lg text-primary mb-6">Precisa perfurar, limpar ou fazer manutenção no seu poço?</h2>
+<p class="font-body-lg text-on-secondary-fixed-variant mb-12 max-w-2xl mx-auto">
+                        Fale agora com a Águas Cristalinas do Sul pelo WhatsApp e solicite um atendimento personalizado com nossa equipe técnica.
+                    </p>
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-10 py-5 rounded-full font-bold text-xl hover:shadow-xl hover:scale-105 transition-all" href="https://wa.me/55XXXXXXXXXXX" target="_blank">
+                        Solicitar orçamento no WhatsApp
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp Floating Action Button -->
+<a class="fixed bottom-8 right-8 z-[100] w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all" href="https://wa.me/55XXXXXXXXXXX" target="_blank">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-2.135 0-4.108 1.054-5.275 2.813-.215.326-.062.77.34 1.15.39.367.92.35 1.23.012.784-1.01 2.053-1.637 3.705-1.637 2.378 0 4.314 1.83 4.314 4.076 0 2.247-1.936 4.076-4.314 4.076-1.127 0-2.14-.423-2.884-1.11a.81.81 0 00-.773-.197c-.244.072-3.05.955-3.05.955l.89-2.73a.803.803 0 00-.13-.78c-.588-.79-.933-1.74-.933-2.77 0-3.003 2.585-5.44 5.76-5.44.15 0 .3 0 .45.01zm.004-2.172c-4.418 0-8.01 3.418-8.01 7.61 0 1.4.39 2.705 1.066 3.82L4 20l4.734-1.424a7.92 7.92 0 003.298.715c4.418 0 8.01-3.418 8.01-7.61 0-4.192-3.592-7.61-8.01-7.61z"></path>
+</svg>
+</a>
+<!-- Footer -->
+<footer class="bg-primary py-12 px-margin-mobile md:px-margin-desktop text-on-primary">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<div class="text-headline-md font-headline-md text-secondary-container mb-2">Águas Cristalinas do Sul</div>
+<p class="font-body-md text-primary-fixed-dim max-w-xs opacity-80">Excelência em Perfuração e Manutenção de Poços Artesianos.</p>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 font-body-md">
+<a class="flex items-center gap-2 hover:text-white transition-opacity text-primary-fixed-dim" href="https://www.instagram.com/aguas_cristalinas_do_sul/" target="_blank">
+<span class="material-symbols-outlined">camera</span>
+                    Instagram
+                </a>
+<a class="hover:text-white transition-opacity text-primary-fixed-dim" href="#">Política de Privacidade</a>
+<a class="hover:text-white transition-opacity text-primary-fixed-dim" href="#">Termos de Uso</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto border-t border-white/10 mt-12 pt-8 text-center text-sm text-primary-fixed-dim opacity-60">
+            © 2024 Águas Cristalinas do Sul. Excelência em Perfuração de Poços.
+        </div>
+</footer>
+<script>
+        // Simple scroll reveal animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        document.addEventListener("DOMContentLoaded", reveal);
+
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
