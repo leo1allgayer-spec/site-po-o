@@ -22,6 +22,27 @@
 <meta content="Poços Artesianos no Sul | Águas Cristalinas do Sul" name="twitter:title"/>
 <meta content="Perfuração, manutenção e limpeza de poços artesianos com atendimento profissional e orçamento pelo WhatsApp." name="twitter:description"/>
 <meta content="https://www.aguascristalinasdosul.com/assets/images/logo-aguas-cristalinas.png" name="twitter:image"/>
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-53HN2LCJ');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Event snippet for Contato WhatsApp conversion page -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  function gtag_report_whatsapp_conversion() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18303512242/lqMaCPbw7d0cELLd5ZdE',
+      'value': 1.0,
+      'currency': 'BRL'
+    });
+  }
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -173,6 +194,10 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53HN2LCJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- Navigation -->
 <header class="fixed top-0 w-full z-50 backdrop-blur-md bg-surface/90 border-b border-outline-variant h-20">
 <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full">
@@ -424,6 +449,15 @@
                         otherVideo.pause();
                     }
                 });
+            });
+        });
+
+        // Register Google Ads conversion when visitors click a WhatsApp contact link.
+        document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
+            link.addEventListener("click", () => {
+                if (typeof gtag_report_whatsapp_conversion === "function") {
+                    gtag_report_whatsapp_conversion();
+                }
             });
         });
     </script>
